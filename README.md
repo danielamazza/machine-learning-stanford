@@ -5,4 +5,3 @@ This is the repository containing all the staff relating to my favourite MOOC co
 Aggiunta riga per prova push da cd rer
 aggiunta nuova riga per utilizzo github desktop da pc regione
 
-Daniela
