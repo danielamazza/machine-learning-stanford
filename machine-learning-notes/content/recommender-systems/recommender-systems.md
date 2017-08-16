@@ -1,6 +1,6 @@
 +++
 title = "Introduction"
-description = "description"
+description = ""
 date = "2017-08-16T19:36:24+02:00"
 creatordisplayname = "Daniela MAZZA"
 creatoremail = "danielamazza@gmail.com"
@@ -8,13 +8,12 @@ lastmodifierdisplayname = "Daniela MAZZA"
 lastmodifieremail = "danielamazza@gmail.com"
 tags = ["machine learning","coursera"]
 weight = 10
-pre ="<i class='fa fa-edit'></i> "
+#pre ="<i class='fa fa-edit'></i> "
 
 +++
 
-#  #
-
-There are two motivations for talking about recommender systems:
+Two motivations are important for talking about recommender systems: **applications** and **identification of crucial features**.
+<!--more-->
 
 1. Important application of ML systems
 	* Many technology companies find recommender systems to be absolutely a killer application: think about Amazon, Ebay, iTunes Genius.
