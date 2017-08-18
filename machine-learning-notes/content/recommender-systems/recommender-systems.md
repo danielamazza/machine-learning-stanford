@@ -1,5 +1,4 @@
 +++
-<<<<<<< HEAD
 title = "Recommender systems"
 description = ""
 weight = 2
