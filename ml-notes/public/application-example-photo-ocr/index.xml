@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Application Example: Photo OCR on Machine Learning notes</title>
+    <link>http://example.org/application-example-photo-ocr/</link>
+    <description>Recent content in Application Example: Photo OCR on Machine Learning notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Aug 2017 22:21:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://example.org/application-example-photo-ocr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

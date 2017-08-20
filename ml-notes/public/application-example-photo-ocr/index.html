@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.25.1" />
+    <meta name="description" content="">
+
+
+    <title>Application Example: Photo OCR :: Machine Learning notes</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <link href="/css/nucleus.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/hybrid.css" rel="stylesheet">
+    <link href="/css/featherlight.min.css" rel="stylesheet">
+    <link href="/css/horsey.css" rel="stylesheet">
+    
+    <link href="/css/theme.css" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-2.x.min.js"></script>
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left {
+        display:none !important;
+      }
+    </style>
+
+    
+
+    
+
+  </head>
+  <body class="" data-url="/application-example-photo-ocr/">
+    <nav id="sidebar" class="">
+
+
+
+
+
+<div class="highlightable">
+  <div id="header-wrapper">
+    <div id="header">
+       
+	<p>DocDock Documentation</p>
+ 
+
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+<script type="text/javascript" src="/js/lunr.min.js"></script>
+<script type="text/javascript" src="/js/horsey.js"></script>
+<script type="text/javascript">
+    var baseurl = "http:\/\/example.org\/";
+</script>
+<script type="text/javascript" src="/js/search.js"></script>
+
+    
+  </div>
+
+  
+    <ul class="topics">
+        
+            <li data-nav-id="/" class="dd-item">
+            <a href="/"><i class="fa fa-fw fa-home"></i></a>
+            </li>
+        
+        
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-start/" class="dd-item 
+        
+        
+        parent
+        ">
+      <a href="/getting-start/">
+        <span>Getting start</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-start/installation/" class="dd-item
+     
+      ">
+        <a href="/getting-start/installation/">
+        <span>Installation</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-start/configuration/" class="dd-item
+     
+      ">
+        <a href="/getting-start/configuration/">
+        <span>Configuration</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    <label>Density Estimation</label>
+    <li data-nav-id="/anomaly-detection/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/anomaly-detection/">
+        <span>Anomaly Detection</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/anomaly-detection/problem-motivation/" class="dd-item
+     
+      ">
+        <a href="/anomaly-detection/problem-motivation/">
+        <span>Problem Motivation</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/anomaly-detection/gaussian-distribution/" class="dd-item
+     
+      ">
+        <a href="/anomaly-detection/gaussian-distribution/">
+        <span>Gaussian Distribution</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/anomaly-detection/algorithm/" class="dd-item
+     
+      ">
+        <a href="/anomaly-detection/algorithm/">
+        <span>Algorithm</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/create-page/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/create-page/">
+        <span><i class='fa fa-edit'></i> Create Page</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/create-page/homepage/" class="dd-item
+     
+      ">
+        <a href="/create-page/homepage/">
+        <span>Home page</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/create-page/page-images/" class="dd-item
+     
+      ">
+        <a href="/create-page/page-images/">
+        <span>About images</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+             
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/create-page/page-slide/" class="dd-item
+     
+      ">
+        <a href="/create-page/page-slide/">
+        <span>Present a Slide</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/content-organisation/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/content-organisation/">
+        <span>Content Organisation</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/content-organisation/logo/" class="dd-item
+     
+      ">
+        <a href="/content-organisation/logo/">
+        <span>Logo placeholder</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/content-organisation/extramenu/" class="dd-item
+     
+      ">
+        <a href="/content-organisation/extramenu/">
+        <span>Extra menu entries</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/content-organisation/customize-style/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/content-organisation/customize-style/">
+        <span>Customize website look and feel</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/content-organisation/customize-style/theme-variants/" class="dd-item
+     
+      ">
+        <a href="/content-organisation/customize-style/theme-variants/">
+        <span>Theme variants</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/recommender-systems/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/recommender-systems/">
+        <span>Recommended Systems</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/recommender-systems/recommender-systems/" class="dd-item
+     
+      ">
+        <a href="/recommender-systems/recommender-systems/">
+        <span>Recommender systems</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/shortcodes/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/shortcodes/">
+        <span>Shortcodes</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/alert/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/alert/">
+        <span>alert</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/attachments/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/attachments/">
+        <span>attachments</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/button/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/button/">
+        <span>button</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/shortcodes/children/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/shortcodes/children/">
+        <span>children</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/shortcodes/children/children-1/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/shortcodes/children/children-1/">
+        <span>page 1</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/shortcodes/children/children-1/children-1-1/">
+        <span>page 1-1</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/children-1-1-1/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/">
+        <span>page 1-1-1</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/">
+        <span>page 1-1-1-1</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/">
+        <span>page 1-1-1-1-1</span>
+
+        
+        
+
+        
+      </a>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/shortcodes/children/children-2/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/shortcodes/children/children-2/">
+        <span>page 2</span>
+
+        
+        
+
+          
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
+          
+
+        
+
+        
+      </a>
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/children/children-2/test3/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/children/children-2/test3/">
+        <span>page test 3</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/shortcodes/children/children-3/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/shortcodes/children/children-3/">
+        <span>page 3</span>
+
+        
+        
+
+        
+      </a>
+              
+    </li>
+  
+ 
+
+            
+          
+             
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/children/test/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/children/test/">
+        <span>page test</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/excerpt/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/excerpt/">
+        <span>excerpt</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/excerpt-include/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/excerpt-include/">
+        <span>excerpt-include</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/expand/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/expand/">
+        <span>expand</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/icon/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/icon/">
+        <span>icon</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/image/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/image/">
+        <span>image</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/mermaid/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/mermaid/">
+        <span>mermaid</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/notice/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/notice/">
+        <span>notice</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/panel/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/panel/">
+        <span>panel</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/shortcodes/revealjs/" class="dd-item
+     
+      ">
+        <a href="/shortcodes/revealjs/">
+        <span>revealjs</span> 
+        
+        </a></li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/search/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/search/">
+        <span>About the Search Engine</span>
+
+        
+        
+
+        
+      </a>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/large-scale-machine-learning/" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/large-scale-machine-learning/">
+        <span>Large Scale Machine Learning</span>
+
+        
+        
+
+        
+      </a>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/application-example-photo-ocr/" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/application-example-photo-ocr/">
+        <span>Application Example: Photo OCR</span>
+
+        
+        
+
+        
+      </a>
+              
+    </li>
+  
+ 
+
+          
+        
+
+        
+    </ul>
+    
+     
+    <section id="footer">
+      
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+        
+          <div id="top-bar">
+            
+
+            <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                <span id="sidebar-toggle-span">
+                  <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </span>
+                <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                <span class="links">
+                
+
+
+
+
+ <a href='/'>Machine Learning Notes</a> > Application Example: Photo OCR
+
+ 
+
+   
+                </span>
+            </div>
+            <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#problem-description-and-pipeline">Problem description and pipeline</a></li>
+<li><a href="#sliding-windows">Sliding Windows</a>
+<ul>
+<li><a href="#supervised-learning-for-pedestrian-detection">Supervised learning for pedestrian detection</a></li>
+</ul></li>
+<li><a href="#getting-lots-of-data-and-artificial-data">Getting Lots of Data and Artificial Data</a></li>
+<li><a href="#ceiling-analysis-what-part-of-the-pipeline-to-work-on-next">Ceiling Analysis: What Part of the Pipeline to Work on Next</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+          </div>
+        
+        
+        <div id="body-inner">
+          
+            <h1>Application Example: Photo OCR</h1>
+          
+
+
+
+
+
+
+<p>This chapter deals with a complex, end-to-end application of machine learning, the <strong>Photo OCR (=Optical Character Recognition)</strong>. Identifying and recognizing objects, words, and digits in an image is a challenging task. We discuss about building a pipeline to tackle this problem and how to analyze and improve the performance of such a system.</p>
+
+<h2 id="problem-description-and-pipeline">Problem description and pipeline</h2>
+
+<p>This problem permits:</p>
+
+<ul>
+<li><p>to put together various aspects of the machine learning theory;</p></li>
+
+<li><p>to describe the use of a <strong>pipeline</strong>;</p></li>
+
+<li><p>to introduce the <strong>computer vision</strong> and <strong>artificial data synthesis</strong>.</p></li>
+</ul>
+
+<p>The problem regarding the recognition of text in images consists of:</p>
+
+<ol>
+<li><p>detect where there is text in the picture;</p></li>
+
+<li><p>look at each text region and read the text.</p></li>
+</ol>
+
+<p>OCR of scanned text is today easier that OCR of text in images. It regards a lot of important applications, as supporting blind people, help car navigation systems. The steps are:</p>
+
+<ol>
+<li>Text detection</li>
+<li>Character segmentation</li>
+<li>Character classification</li>
+</ol>
+
+<p>There could be also a sort of spelling correction <em>(for example c1eaning &ndash;&gt; cleaning)</em>.</p>
+
+<p>The three steps above form a pipeline:</p>
+
+<p>IMAGE &ndash;&gt; Text Detection &ndash;&gt; Character segmentation &ndash;&gt; Character Recognition</p>
+
+<p>In many complex machine learning systems, these sorts of pipelines are common.</p>
+
+<h2 id="sliding-windows">Sliding Windows</h2>
+
+<p><strong>Text detection</strong> is an unusual problem in computer vision. Areas containing text are rectangular portion of different sizes. We can think before at a simpler detection problem, regarding <strong>pedestrians</strong>. It is simpler because of the similar aspects ratio (ratio between the heigt and the width of the rectangles) of pedestrians.</p>
+
+<h3 id="supervised-learning-for-pedestrian-detection">Supervised learning for pedestrian detection</h3>
+
+<p>We can choose a standard size, i.e. 36x82 pixel and use a neural network model to learn if an image contains a pedestrian (y = 1) or not (y = 0).</p>
+
+<p>Then we apply the algorithm at the image in wich we want to detect algorithm, <strong>sliding the window  36x82 all over the image</strong>. The parameter of sliding is called <strong>step-size</strong>. If the slide-step is small, i.e. 1 pixel, then the algorithm is accurated but it is computation expensive.</p>
+
+<p>Then we take a larger image patches, to detect bigger pedestrians.</p>
+
+<p>In a similar way, for text detection, we make the training considering a portion of a certain size with positive and negative examples.
+Then we use an <strong>expansion operator</strong>, grouping all the close positive regions together.</p>
+
+<p>We use a similar operaration of training the classifier for the <strong>character segmentation</strong> and for the <strong>character classification</strong>.</p>
+
+<h2 id="getting-lots-of-data-and-artificial-data">Getting Lots of Data and Artificial Data</h2>
+
+<p>Artificial Data can be a an easy way to get a huge training set to give to your learning algorithm.
+For example, you can take characters from different fonts and paste these characters against different random backgrounds.</p>
+
+<p>The other main approach to artificial data synthesis is to take real examples and to create additional data for amplifying the training set, introducing distortion. We can do this in text images but also, for example, in audio speeches introducing some background sounds.</p>
+
+<h2 id="ceiling-analysis-what-part-of-the-pipeline-to-work-on-next">Ceiling Analysis: What Part of the Pipeline to Work on Next</h2>
+
+<p>Considering the pipeline process, how to allocate resources for don&rsquo;t waste time?</p>
+
+<p>The ceiling analysis is based on the measure of how the improvement of each part of the system can influence on the overall system.</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+
+
+
+      </div>
+    </div>
+
+    
+ 
+    
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/large-scale-machine-learning/" title="Large Scale Machine Learning"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/getting-start/" title="Getting start" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js"></script>
+    <script src="/js/featherlight.min.js"></script>
+    <script src="/js/html5shiv-printshiv.min.js"></script>
+    <script src="/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js"></script>
+    <script src="/js/learn.js"></script>
+    <script src="/js/hugo-learn.js"></script>
+
+    
+    <link href="/mermaid/mermaid.css" type="text/css" rel="stylesheet"/>
+    <script src="/mermaid/mermaid.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    
+
+    
+
+  </body>
+</html>

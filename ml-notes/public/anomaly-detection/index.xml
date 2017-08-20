@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anomaly Detection on Machine Learning notes</title>
+    <link>http://example.org/anomaly-detection/</link>
+    <description>Recent content in Anomaly Detection on Machine Learning notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Aug 2017 22:21:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://example.org/anomaly-detection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Problem Motivation</title>
+      <link>http://example.org/anomaly-detection/problem-motivation/</link>
+      <pubDate>Wed, 16 Aug 2017 22:31:38 +0200</pubDate>
+      
+      <guid>http://example.org/anomaly-detection/problem-motivation/</guid>
+      <description>&lt;p&gt;Anomaly detection is a reasonably commonly used type of machine learning application. It can be thought of as a solution to an unsupervised learning problem, but has aspects of supervised learning.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gaussian Distribution</title>
+      <link>http://example.org/anomaly-detection/gaussian-distribution/</link>
+      <pubDate>Wed, 16 Aug 2017 22:44:42 +0200</pubDate>
+      
+      <guid>http://example.org/anomaly-detection/gaussian-distribution/</guid>
+      <description>Gaussian Distribution</description>
+    </item>
+    
+    <item>
+      <title>Algorithm</title>
+      <link>http://example.org/anomaly-detection/algorithm/</link>
+      <pubDate>Wed, 16 Aug 2017 22:47:32 +0200</pubDate>
+      
+      <guid>http://example.org/anomaly-detection/algorithm/</guid>
+      <description>Algorithm</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recommended Systems on Machine Learning notes</title>
+    <link>http://example.org/recommender-systems/</link>
+    <description>Recent content in Recommended Systems on Machine Learning notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/recommender-systems/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Recommender systems</title>
+      <link>http://example.org/recommender-systems/recommender-systems/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/recommender-systems/recommender-systems/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;There are two motivations for talking about recommender systems:&lt;/p&gt;
+
+&lt;h2 id=&#34;important-application-of-ml-systems&#34;&gt;Important application of ML systems&lt;/h2&gt;
+
+&lt;p&gt;=======
+title = &amp;ldquo;Introduction&amp;rdquo;
+description = &amp;ldquo;&amp;rdquo;
+date = &amp;ldquo;2017-08-16T19:36:24+02:00&amp;rdquo;
+creatordisplayname = &amp;ldquo;Daniela MAZZA&amp;rdquo;
+creatoremail = &amp;ldquo;danielamazza@gmail.com&amp;rdquo;
+lastmodifierdisplayname = &amp;ldquo;Daniela MAZZA&amp;rdquo;
+lastmodifieremail = &amp;ldquo;danielamazza@gmail.com&amp;rdquo;
+tags = [&amp;ldquo;machine learning&amp;rdquo;,&amp;ldquo;coursera&amp;rdquo;]
+weight = 10
+#pre =&amp;rdquo;&lt;i class=&#39;fa fa-edit&#39;&gt;&lt;/i&gt; &amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;+++&lt;/p&gt;
+
+&lt;p&gt;Two motivations are important for talking about recommender systems: &lt;strong&gt;applications&lt;/strong&gt; and &lt;strong&gt;identification of crucial features&lt;/strong&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
